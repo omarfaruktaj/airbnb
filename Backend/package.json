@@ -1,0 +1,48 @@
+{
+  "name": "airbnb-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "keywords": [],
+  "author": "Omar Faruk",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "dev": "ts-node-dev -r tsconfig-paths/register --env-file=.env ./src/server.ts",
+    "start": "node --env-file=.env ./dist/server.js",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix ./src",
+    "format": "prettier ./src --write",
+    "format:check": "prettier ./src --check",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.0.1",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.18.2",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/express": "^5.0.0",
+    "eslint": "^9.20.1",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "3.5.1",
+    "ts-node-dev": "^2.0.0",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "packageManager": "pnpm@10.3.0+sha512.ee592eda8815a8a293c206bb0917c4bb0ff274c50def7cbc17be05ec641fc2d1b02490ce660061356bd0d126a4d7eb2ec8830e6959fb8a447571c631d5a2442d"
+}

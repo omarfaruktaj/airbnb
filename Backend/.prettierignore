@@ -1,0 +1,33 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore build directories (if any)
+build/
+dist/
+
+# Ignore any generated files (e.g., from transpiling or bundling)
+*.min.js
+*.bundle.js
+
+# Ignore configuration files (if you don't want Prettier to format them)
+*.json
+*.yml
+*.yaml
+
+# Ignore all Markdown files (if you don't want them formatted)
+*.md
+
+# Ignore all log files
+*.log
+
+# Ignore .git directory
+.git/
+
+# Ignore any test files or folders (if desired)
+tests/
+test/
+__tests__
+
+# Ignore any other specific files or patterns
+*.scss
+*.css
