@@ -30,5 +30,5 @@
       ]
     }
   },
-  "include": ["src"]
+  "include": ["src", ".temp/test.tsx", ".temp/test1.tsx", ".temp/test2.tsx", ".temp/test3.tsx", ".temp/test4.tsx", "dist/test.tsx", "dist/test1.tsx", "dist/test2.tsx", "dist/test3.tsx", "dist/test4.tsx"]
 }
